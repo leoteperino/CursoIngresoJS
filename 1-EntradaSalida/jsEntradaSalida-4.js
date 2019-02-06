@@ -14,7 +14,9 @@ function mostrar()
 	//En clase:
 	var nombre;
 	nombre = prompt("Por favor Ingrese su dato");
-	elNombre.value = nombre;
+	//elNombre.value = nombre;
+	document.getElementById("elNombre").value = nombre;
+
 }
 	
 
