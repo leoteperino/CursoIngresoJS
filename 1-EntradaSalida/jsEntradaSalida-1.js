@@ -2,5 +2,6 @@
 function mostrar()
 {
 	alert("Esto funciona de maravilla");
+	alert("Este es un segundo alert");
 }
 
