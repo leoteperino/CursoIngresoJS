@@ -4,9 +4,17 @@
 */
 function mostrar()
 {
+	//En casa:
+	/*
 	var dato
 	dato = prompt("Ingrese un dato");
 	document.getElementById("elNombre").value = dato;
+	*/
+
+	//En clase:
+	var nombre;
+	nombre = prompt("Por favor Ingrese su dato");
+	elNombre.value = nombre;
 }
 	
 
