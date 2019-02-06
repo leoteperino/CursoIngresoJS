@@ -6,3 +6,4 @@ primero:
 
 --------------------------------------------
 Esta es una prueba para realizar un nuevo commit
+Agrego una nueva fila para probar como se maneja el clone.
