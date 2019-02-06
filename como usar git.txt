@@ -3,3 +3,6 @@ primero:
 2 - git add .
 3 - git commit -m "comentario del git"
 4 - git push
+
+--------------------------------------------
+Esta es una prueba para realizar un nuevo commit
