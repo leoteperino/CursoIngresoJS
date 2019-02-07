@@ -69,6 +69,6 @@ function dividir()
 
 	dividir = primerNumero / segundoNumero;
 
-	alert("La dicision es: " + dividir); 
+	alert("La division es: " + dividir); 
 }
 
