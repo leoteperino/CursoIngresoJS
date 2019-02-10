@@ -8,21 +8,24 @@ function mostrar()
 	*/
 
 	//Guardo en la variable nomre lo que se ingresa por prompt "Harry Potter" es un predeterminado que se muestra 
-	var nombre = prompt("Please enter your name", "Harry Potter");
+	//var nombre = prompt("Please enter your name", "Harry Potter");
 	//Muestro lo que se Ingreso en la variable
-	alert(nombre);
+	//alert(nombre);
 
 	/*
 	Otra forma de hacerlo
 	*/
 	//Primero Declaro la variable
-	var nombre;
+	//var nombre;
 	//Luego inicializo la variable y guardo lo que se ingresa por prompt
-	nombre=prompt("Por favor Ingresa tu nombre");
+	//nombre=prompt("Por favor Ingresa tu nombre");
 	//Muestro lo que se guardo en la variable
-	alert(nombre);
+	//alert(nombre);
 	//Si el contenido del alert tiene "" se escribe el literal, no es la variable
-	alert("nombre");
+	//alert("nombre");
 
+	var nombre;
+	nombre = prompt("Ingrese un nombre");
+	alert(nombre);
 }
 

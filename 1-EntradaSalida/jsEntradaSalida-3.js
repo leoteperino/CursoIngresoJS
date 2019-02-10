@@ -4,8 +4,9 @@ function mostrar()
 {
 	//Tomo el value de un input text, lo guardo en una variable y lo muestro
 	//En este caso "elNombre" es el id del input text.
-	var nombre = elNombre.value;
-	alert(nombre);
+	var nombre;
+	nombre = elNombre.value;
+	alert(nombre)
 }
 
 
