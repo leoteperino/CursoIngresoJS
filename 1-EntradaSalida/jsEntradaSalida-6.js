@@ -18,6 +18,7 @@ function sumar()
 
 	//En clase:
 	//Todo debe estar hecho por pasos.
+	/*
 	var primerNumero;
 	var segundoNumero;
 	var suma;
@@ -30,6 +31,21 @@ function sumar()
 
 	suma = primerNumero + segundoNumero;
 
-	alert(suma); 
+	alert(suma);
+	*/
+
+	var primerNumeroIngresado;
+	var segundoNumeroIngresado;
+	var sumaTotal;
+
+	primerNumeroIngresado = numeroUno.value;
+	segundoNumeroIngresado = numeroDos.value;
+
+	primerNumeroIngresado = parseInt(primerNumeroIngresado);
+	segundoNumeroIngresado = parseInt(segundoNumeroIngresado);
+
+	sumaTotal = primerNumeroIngresado + segundoNumeroIngresado;
+
+	alert(sumaTotal);
 }
 
