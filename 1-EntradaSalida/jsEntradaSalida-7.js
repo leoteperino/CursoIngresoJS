@@ -4,71 +4,69 @@ mostrar el resulto por medio de "ALERT"
 ej.: "la Resta es 750"*/ 
 function sumar()
 {	
-	var primerNumero;
-	var segundoNumero;
-	var sumar;
+	var primerNumeroIngresado;
+	var segundoNumeroIngresado;
+	var sumaTotal;
 
-	primerNumero = numeroUno.value;
-	segundoNumero = numeroDos.value;
+	primerNumeroIngresado = numeroUno.value;
+	segundoNumeroIngresado = numeroDos.value;
 
-	primerNumero = parseInt(primerNumero);
-	segundoNumero = parseInt(segundoNumero);
+	primerNumeroIngresado = parseInt(primerNumeroIngresado);
+	segundoNumeroIngresado = parseInt(segundoNumeroIngresado);
 
-	suma = primerNumero + segundoNumero;
+	sumaTotal = primerNumeroIngresado + segundoNumeroIngresado;
 
-	alert("La suma es: " + suma); 
+	alert(sumaTotal);
 }
 
 function restar()
 {
-	var primerNumero;
-	var segundoNumero;
-	var restar;
+	var primerNumeroIngresado;
+	var segundoNumeroIngresado;
+	var	restaTotal;
 
-	primerNumero = numeroUno.value;
-	segundoNumero = numeroDos.value;
+	primerNumeroIngresado = numeroUno.value;
+	segundoNumeroIngresado = numeroDos.value;
 
-	primerNumero = parseInt(primerNumero);
-	segundoNumero = parseInt(segundoNumero);
+	primerNumeroIngresado = parseInt(primerNumeroIngresado);
+	segundoNumeroIngresado = parseInt(segundoNumeroIngresado);
 
-	restar = primerNumero - segundoNumero;
+	restaTotal = primerNumeroIngresado - segundoNumeroIngresado;
 
-	alert("La resta es: " + restar); 
-	
+	alert(restaTotal);
 }
 
 function multiplicar()
 { 
-	var primerNumero;
-	var segundoNumero;
-	var multiplicar;
+	var primerNumeroIngresado;
+	var segundoNumeroIngresado;
+	var multiplicacion;
 
-	primerNumero = numeroUno.value;
-	segundoNumero = numeroDos.value;
+	primerNumeroIngresado = numeroUno.value;
+	segundoNumeroIngresado = numeroDos.value;
 
-	primerNumero = parseInt(primerNumero);
-	segundoNumero = parseInt(segundoNumero);
+	primerNumeroIngresado = parseInt(primerNumeroIngresado);
+	segundoNumeroIngresado = parseInt(segundoNumeroIngresado);
 
-	multiplicar = primerNumero * segundoNumero;
+	multiplicacion = primerNumeroIngresado * segundoNumeroIngresado;
 
-	alert("La multiplicacion es: " + multiplicar); 
-	
+	alert(multiplicacion);
 }
 
 function dividir()
 {
-	var primerNumero;
-	var segundoNumero;
-	var dividir;
+	var primerNumeroIngresado;
+	var segundoNumeroIngresado;
+	var division;
 
-	primerNumero = numeroUno.value;
-	segundoNumero = numeroDos.value;
+	primerNumeroIngresado = numeroUno.value;
+	segundoNumeroIngresado = numeroDos.value;
 
-	primerNumero = parseInt(primerNumero);
-	segundoNumero = parseInt(segundoNumero);
+	primerNumeroIngresado = parseInt(primerNumeroIngresado);
+	segundoNumeroIngresado = parseInt(segundoNumeroIngresado);
 
-	dividir = primerNumero / segundoNumero;
+	division = primerNumeroIngresado / segundoNumeroIngresado;
 
-	alert("La division es: " + dividir); 
+	alert(division);	
 }
 
