@@ -1,6 +1,5 @@
 function mostrar()
 {
-//tomo la edad  
 	//tomo la edad
 	var edadIngresada;
 
