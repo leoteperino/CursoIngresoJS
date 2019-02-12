@@ -1,8 +1,13 @@
 function mostrar()
 {
-//tomo la edad  
+	//tomo la edad  
+	var edadIngresada;
+	var estadoCivilIngresado;
 
-	
+	edadIngresada = edad.value;
+	estadoCivilIngresado = estadoCivil.value;
 
-
+	if(edadIngresada < "18" && estadoCivilIngresado != "Soltero"){
+		alert("Es muy pequeño para no ser soltero")
+	}
 }//FIN DE LA FUNCIÓN
