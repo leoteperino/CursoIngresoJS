@@ -16,11 +16,19 @@ function mostrar()
 	alert ("El perimetro del Rectangulo es: " + perimetro + "cm");*/
 
 	//Ejercicio Uno Nuevo?
-	var nombre1 = "Pepe";
-	var nombre2 = "Pedro";
-	var edad1 = 45;
-	var edad2 = 34;
+	var nombre1;
+	var nombre2;
+	var edad1; 
+	var edad2;
 	var sumaEdades;
+
+	nombre1 = prompt("Ingrese su Nombre");
+	edad1 = prompt("Ingrese su Edad");
+	nombre2 = prompt("Ingrese su Nombre");
+	edad2 = prompt("Ingrese su Edad");
+
+	edad1 = parseInt(edad1);
+	edad2 = parseInt(edad2);
 
 	sumaEdades = edad1 + edad2;
 
