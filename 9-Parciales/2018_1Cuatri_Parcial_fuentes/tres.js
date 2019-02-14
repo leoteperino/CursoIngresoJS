@@ -16,4 +16,5 @@ function mostrar()
 	precioFinal = ingresaPrecio * porcentajeIngresado;
 
 	elPrecioFinal.value = precioFinal;
+
 }
