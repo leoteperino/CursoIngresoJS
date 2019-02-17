@@ -11,7 +11,7 @@ function mostrar()
 	ingresaPrecio = parseInt(ingresaPrecio);
 	ingresaPorcentaje = parseInt(ingresaPorcentaje);
 
-	porcentajeIngresado = 1 - ingresaPorcentaje / 100;
+	porcentajeIngresado = 1 - (ingresaPorcentaje / 100);
 
 	precioFinal = ingresaPrecio * porcentajeIngresado;
 

@@ -15,5 +15,5 @@ function mostrar()
 	superficie = base * 3;
 	perimetro = (base * altura) / 2;
 
-	alert("La base del triangulo es: " + base + " y su superficie es: " + superficie);
+	alert("El perimetro del rectangulo es: " + perimetro);
 }

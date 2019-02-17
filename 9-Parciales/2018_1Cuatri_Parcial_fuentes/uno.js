@@ -1,7 +1,7 @@
 
 function mostrar()
 {
-	/*var largo;
+	var largo;
 	var ancho;
 	var perimetro;
 
@@ -13,9 +13,10 @@ function mostrar()
 
 	perimetro = 2 * (largo + ancho);
 
-	alert ("El perimetro del Rectangulo es: " + perimetro + "cm");*/
+	alert ("El perimetro del Rectangulo es: " + perimetro + "cm");
 
-	//Ejercicio Uno Nuevo?
+	//Ejercicio Uno en clase
+	/*
 	var nombre1;
 	var nombre2;
 	var edad1; 
@@ -33,5 +34,6 @@ function mostrar()
 	sumaEdades = edad1 + edad2;
 
 	alert("Ustedes son " + nombre1 + " y " + nombre2 + " y la suma de sus edades es " + sumaEdades);
+	*/
 
 }

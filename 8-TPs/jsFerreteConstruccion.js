@@ -37,5 +37,23 @@ function Circulo ()
 
 function Materiales () 
 {
-	
+	var IngresoLargo;
+	var IngresoAncho;
+	var calculoMetrosCuadrados;
+	var bolsasCemento;
+	var bolsasCal;
+
+	ingresoLargo = prompt("Ingrese el largo del contrapiso:");
+	ingresarAncho = prompt("ingrese el ancho del contrapiso:");
+
+	ingresoLargo = parseInt(ingresoLargo);
+	ingresarAncho = parseInt(ingresarAncho);
+
+	calculoMetrosCuadrados = ingresoLargo * ingresarAncho;
+
+	bolsasCemento = (calculoMetrosCuadrados * 2) / 1;
+	bolsasCal = (calculoMetrosCuadrados * 3) / 1;
+
+	alert("Se nesecitan: " + bolsasCemento + " bolsas de cemento." + "\n" +
+		  "Se necesitan: " + bolsasCal + " bolsas de Cal." );
 }
