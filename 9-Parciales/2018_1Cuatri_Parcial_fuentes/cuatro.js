@@ -1,26 +1,39 @@
 function mostrar()
 {
-	var cantidadProductos;
+	//Declaro variables
+	var productos;
+	var descuentoProductos;
 	var gasto;
-	var descuentoPorCantidad;
-	var descuentoPorPrecio;
-	var tipoDePago;
-	var recargoPorPagoTarjeta;
+	var descuentoGasto;
+	var tipoPago;
+	var recargoTarjeta;
 
-	cantidadProductos = prompt("Ingrese la cantidad de productos que deseas comprar: ");
+	//Inicializo variables
+	productos = prompt("Ingrese la cantidad de productos que desea comprar");
+	gasto = prompt("Cuanto dinero piensa gastar?");
+	tipoPago = prompt("Ingrese el tipo de pago: "+"\n"+
+						  "Opcion 1 : Efectivo"+"\n"+
+						  "Opcion 2 : Tarjeta de Credito"); 
+	descuentoProductos = gasto * 0.9;
+	descuentoGasto = gasto * 0.85;
+	recargoTarjeta = gasto * 1.1;
 
-	gasto = prompt("Ingrese cuanto dinero quiere gastar: ");
-
-	tipoDePago = prompt("Ingrese el tipo de pago: " + "\n" + 
-						"Opcion 1: Efectivo" + "\n" +
-						"Opcion 2: Tarjeta");
-
-	cantidadProductos = parseInt(cantidadProductos);
-
+	//Parseo las variables
+	productos = parseInt(productos);
 	gasto = parseInt(gasto);
 
-	if(cantidadProductos > 2){
-		
+	//Logica
+	if(productos > 2){
+		gasto = descuentoProductos;
+	}else{
+		if(gasto > 2000){
+			gasto = descuentoGasto;
+		}else{
+			if(tipoPago == 2){
+				gasto = recargoTarjeta;
+			}
+		}
 	}
 
+	alert("Usted a gastado: $" + gasto);
 }
