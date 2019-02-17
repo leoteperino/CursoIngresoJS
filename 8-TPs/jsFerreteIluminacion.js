@@ -10,5 +10,70 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
+	//Declaro Variables
+ 	var lamparasIngresadas;
+ 	var marcaLampara;
+ 	var importeFinal;
+ 	var descuento_50;
+ 	var descuento_40;
+ 	var descuento_30;
+ 	var descuento_25;
+ 	var descuento_15;
+ 	var descuento_10;
+ 	var descuento_5;
+ 	var recargo_10;
+
+ 	//Inicializo las variables
+ 	lamparasIngresadas = Cantidad.value;
+ 	marcaLampara = Marca.value;
+ 	//Parseo las variables
+ 	lamparasIngresadas = parseInt(lamparasIngresadas);
+ 	importeFinal = lamparasIngresadas * 35;
+ 	descuento_50 = importeFinal * 0.5;
+ 	descuento_40 = importeFinal * 0.6;
+ 	descuento_30 = importeFinal * 0.7;
+ 	descuento_25 = importeFinal * 0.75;
+ 	descuento_15 = importeFinal * 0.85;
+ 	descuento_10 = importeFinal * 0.9;
+ 	descuento_5 = importeFinal * 0.95;
  	
+ 	//Logica
+ 	if (lamparasIngresadas > 5){
+ 		importeFinal = descuento_50; 
+ 	}else{
+ 		if(lamparasIngresadas == 5 ){
+ 			if(marcaLampara == "ArgentinaLuz"){
+ 				importeFinal = descuento_40
+ 			}else{
+ 				importeFinal = descuento_30;
+ 			}
+ 		}
+ 		if(lamparasIngresadas == 4){
+ 			if(marcaLampara == "ArgentinaLuz" || marcaLampara == "FelipeLamparas"){
+ 				importeFinal = descuento_25;
+ 			}else{
+ 				importeFinal = descuento_15;
+ 			}
+ 		}
+ 		if(lamparasIngresadas == 3){
+ 			if(marcaLampara == "ArgentinaLuz"){
+ 				importeFinal = descuento_15;
+ 			}else{
+ 				if(marcaLampara == "FelipeLamparas"){
+ 					importeFinal = descuento_10;
+ 				}else{
+ 					importeFinal = descuento_5;
+ 				}
+ 			}
+ 		}
+ 	}
+
+ 	recargo_10 = (importeFinal * 10) / 100;
+ 	
+ 	if(importeFinal > 120){
+ 		alert("Usted pago: $" + recargo_10 + " de IIBB");
+ 		precioDescuento.value = importeFinal + recargo_10;
+ 	}else{
+ 		precioDescuento.value = importeFinal;
+ 	}
 }
