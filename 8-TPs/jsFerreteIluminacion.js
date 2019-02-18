@@ -14,6 +14,8 @@ function CalcularPrecio ()
  	var lamparasIngresadas;
  	var marcaLampara;
  	var importeFinal;
+ 	//Todas estas variables estan de mas, no se debe hacer la multiplicacion varias veces.
+ 	//Correjir
  	var descuento_50;
  	var descuento_40;
  	var descuento_30;
@@ -43,7 +45,7 @@ function CalcularPrecio ()
  	}else{
  		if(lamparasIngresadas == 5 ){
  			if(marcaLampara == "ArgentinaLuz"){
- 				importeFinal = descuento_40
+ 				importeFinal =  0.6;
  			}else{
  				importeFinal = descuento_30;
  			}
@@ -67,7 +69,7 @@ function CalcularPrecio ()
  			}
  		}
  	}
-
+ importeFinal * 0.6;
  	recargo_10 = (importeFinal * 10) / 100;
  	
  	if(importeFinal > 120){
