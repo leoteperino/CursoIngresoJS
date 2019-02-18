@@ -26,7 +26,7 @@ function mostrar()
 			alert(resta);
 		}else{
 			if(suma > 10){
-				alert(suma + sumaMayor10);
+				alert("La suma es: " + suma + sumaMayor10);
 			}else{
 				alert(suma);
 			}
