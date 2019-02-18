@@ -69,7 +69,8 @@ function CalcularPrecio ()
  			}
  		}
  	}
- importeFinal * 0.6;
+ 	//Esto es lo que ten go que agregar y tengo que sacar las variables de descuento.
+	decuento = precio * descuento;
  	recargo_10 = (importeFinal * 10) / 100;
  	
  	if(importeFinal > 120){
