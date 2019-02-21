@@ -1,5 +1,6 @@
 function mostrar()
-{  
+{
+
 	//Declaro variables
 	var primerNumeroIngresado;
 	var segundoNumeroIngresado;
@@ -70,4 +71,39 @@ function mostrar()
 
 	alert("Usted a gastado: $" + gasto);
 	*/
+
+	//Ejercicio 4js - pagina 5 esta el enunciado
+	var numeroIngresado1;
+	var numeroIngresado2;
+	var numeroIngresado3;
+	var numeroIngresado4;
+	var numeroMayor;
+	var descuento;
+	var aumento;
+
+	numeroIngresado1 = prompt("Ingrese un numero");
+	numeroIngresado2 = prompt("Ingrese un numero");
+	numeroIngresado3 = prompt("Ingrese un numero");
+	numeroIngresado4 = prompt("Ingrese un numero");
+
+	numeroIngresado1 = parseInt(numeroIngresado1);
+	numeroIngresado2 = parseInt(numeroIngresado2);
+	numeroIngresado3 = parseInt(numeroIngresado3);
+	numeroIngresado4 = parseInt(numeroIngresado4);
+
+	if(numeroIngresado1 > numeroIngresado2){
+		numeroIngresado1 = numeroMayor;
+	}else{
+		numeroIngresado2 = numeroMayor;
+		if(numeroIngresado3 > numeroIngresado4){
+			numeroIngresado3 = numeroMayor;
+		}else{
+			numeroIngresado4 = numeroMayor
+		}
+	}
+
+	alert(numeroMayor);
+
+	//Siempre hacer una sola vez la cuenta
+
 }
