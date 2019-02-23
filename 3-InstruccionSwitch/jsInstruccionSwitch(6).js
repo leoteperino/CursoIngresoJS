@@ -41,4 +41,5 @@ function mostrar()
 			alert("La hora no existe");
 			break;
 	}
+		
 }//FIN DE LA FUNCIÓN
