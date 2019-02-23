@@ -11,7 +11,7 @@ function mostrar()
 		alert("Es soltero y no es menor");
 	}*/
 
-	var edadIngresada;
+	/*var edadIngresada;
 	var estadoCivilIngresado;
 
 	edadIngresada = edad.value;
@@ -19,6 +19,16 @@ function mostrar()
 	estadoCivilIngresado = estadoCivil.value;
 
 	if(edadIngresada > 17 && estadoCivilIngresado == "Soltero"){
+		alert("Es soltero y no es menor");
+	}*/
+	
+	var edadIngresada;
+	var estadoCivilIngresado;
+	
+	edadIngresada = edad.value;
+	estadoCivilIngresado = estadoCivil.value;
+
+	if(edadIngresada > 18 && estadoCivilIngresado == "Soltero"){
 		alert("Es soltero y no es menor");
 	}
 }//FIN DE LA FUNCIÓN

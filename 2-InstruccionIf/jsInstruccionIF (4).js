@@ -11,12 +11,22 @@ function mostrar()
 		alert("Es adolescente");
 	}*/
 
-	var edadIngresada;
+	/*var edadIngresada;
 
 	edadIngresada = edad.value;
 
 	edadIngresada = parseInt(edadIngresada);
 
+	if(edadIngresada > 12 && edadIngresada < 18){
+		alert("Usted es adolescente");
+	}*/
+	
+	var edadIngresada;
+	
+	//Incializo variables
+	edadIngresada = edad.value;
+	
+	//Logica
 	if(edadIngresada > 12 && edadIngresada < 18){
 		alert("Usted es adolescente");
 	}

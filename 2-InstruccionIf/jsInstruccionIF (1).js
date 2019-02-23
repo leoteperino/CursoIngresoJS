@@ -10,7 +10,7 @@ function mostrar(){
 		alert("Niña Bonita");
 	} */
 
-	var edadIngresada;
+	/*var edadIngresada;
 
 	edadIngresada = edad.value;
 
@@ -19,5 +19,16 @@ function mostrar(){
 
 	if (edadIngresada == 15){
 		alert("Niña Bonita")
+	}*/
+	
+	//Declaro variables
+	var edadIngresada;
+	
+	//Incializo variables
+	edadIngresada = edad.value;
+	
+	//Logica
+	if(edadIngresada == 15){
+		alert("Niña Bonita");
 	}
 }//FIN DE LA FUNCIÓN

@@ -17,7 +17,7 @@ function mostrar()
 		}
 	}*/ 
 
-	var edadIngresada;
+	/*var edadIngresada;
 
 	edadIngresada = edad.value;
 
@@ -28,6 +28,22 @@ function mostrar()
 	}else{
 		if(edadIngresada > 12){
 			alert("Usted es un adolescente");
+		}else{
+			alert("Usted es un niño");
+		}
+	}*/
+	
+	var edadIngresada;
+	
+	//Incializo variables
+	edadIngresada = edad.value;
+	
+	//Logica
+	if(edadIngresada > 17){
+		alert("Usted es mayor de edad");
+	}else{
+		if(edadIngresada > 12 && edadIngresada < 18){
+			alert ("Usted es adolescente");
 		}else{
 			alert("Usted es un niño");
 		}

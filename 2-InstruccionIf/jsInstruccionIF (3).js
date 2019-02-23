@@ -13,7 +13,7 @@ function mostrar()
 		alert("Es menor de edad");
 	} */
 
-	var edadIngresada;
+	/*var edadIngresada;
 
 	edadIngresada = edad.value;
 
@@ -23,6 +23,18 @@ function mostrar()
 		alert("Usted es mayor de edad");
 	}else{
 		alert("Usted no es mayor de edad");
+	}*/
+	
+	var edadIngresada;
+	
+	//Incializo variables
+	edadIngresada = edad.value;
+	
+	//Logica
+	if(edadIngresada > 17){
+		alert("Usted es mayor de edad");
+	}else{
+		alert("Usted es menor de edad");
 	}
 
 }//FIN DE LA FUNCIÓN
