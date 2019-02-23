@@ -34,7 +34,7 @@ function sumar()
 	alert(suma);
 	*/
 
-	var primerNumeroIngresado;
+	/*var primerNumeroIngresado;
 	var segundoNumeroIngresado;
 	var sumaTotal;
 
@@ -46,6 +46,26 @@ function sumar()
 
 	sumaTotal = primerNumeroIngresado + segundoNumeroIngresado;
 
-	alert(sumaTotal);
+	alert(sumaTotal);*/
+	
+	//Declaro variables
+	var primerNumeroIngresado;
+	var segundoNumeroIngresado;
+	var suma;
+	
+	//Inicializo variables
+	primerNumeroIngresado = document.getElementById("numeroUno").value;
+	segundoNumeroIngresado = document.getElementById("numeroDos").value;
+	
+	//Parseo variables
+	primerNumeroIngresado = parseInt(primerNumeroIngresado);
+	segundoNumeroIngresado = parseInt(segundoNumeroIngresado);
+	
+	//Inicializo la variable suma despues de haber parseado los datos
+	suma = primerNumeroIngresado + segundoNumeroIngresado;
+	
+	
+	//Muestro la suma
+	alert(suma);
 }
 

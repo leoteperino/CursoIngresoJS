@@ -16,5 +16,6 @@ function mostrarAumento()
 
 	aumento = ingresaSueldo * porcentaje;
 
-	resultado.value = aumento; 
+	resultado.value = aumento;
+
 }

@@ -27,5 +27,9 @@ function mostrar()
 	var nombre;
 	nombre = prompt("Ingrese un nombre");
 	alert(nombre);
+	
+	var marca;
+	marca = prompt("Mostrar tu marca de autos favorita:");
+	alert(marca);
 }
 

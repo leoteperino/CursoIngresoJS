@@ -22,8 +22,7 @@ function mostrar()
 	document.getElementById('elNombre').value = dato;
 	//Colocando la variable por adelante no funciona.
 	//dato = document.getElementById('elNombre').value;
-	//dato = elNombre.value;
-	
+	//dato = elNombre.value;	
 }
 	
 
