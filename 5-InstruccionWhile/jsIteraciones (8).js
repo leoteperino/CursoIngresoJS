@@ -1,22 +1,26 @@
 function mostrar()
 {
+	var numerosIngresados;
+	var acumuladorPositivos;
+	var acumuladorNegativos;
+	var respuesta;
 
-	var contador=0;
-	var positivo=0;
-	var negativo=1;
-	
-	var respuesta='si';
-	
-	while(respuesta == "si"){
-		numeroIngresado = prompt("Ingrese un numero");
-		numeroIngresado = parseInt(numeroIngresado);
-		acumulador = numeroIngresado + acumulador;
-		contador = contador + 1;
-		respuesta = prompt("Ingrese si para continuar sumando"); 
+	acumuladorPositivos = 0;
+	acumuladorNegativos = 1;
+	respuesta = "si";
+
+	while(respuesta != "no"){
+		numerosIngresados = prompt("Ingrese un numero: ");
+		numerosIngresados = parseInt(numerosIngresados);
+			if(numerosIngresados > 0){
+				acumuladorPositivos = acumuladorPositivos + numerosIngresados;
+			}else{
+				acumuladorNegativos = acumuladorNegativos * numerosIngresados;
+			}
+		respuesta = prompt("Si desea continuar coloque si");
 	}
 
-
-document.getElementById('suma').value=positivo;
-document.getElementById('producto').value=negativo;
+    suma.value = acumuladorPositivos;
+    producto.value = acumuladorNegativos;
 
 }//FIN DE LA FUNCIÓN
