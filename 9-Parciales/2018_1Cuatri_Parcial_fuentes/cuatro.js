@@ -2,7 +2,7 @@ function mostrar()
 {
 
 	//Declaro variables
-	var primerNumeroIngresado;
+	/*var primerNumeroIngresado;
 	var segundoNumeroIngresado;
 	var concatenoNumeros;
 	var resta;
@@ -32,7 +32,7 @@ function mostrar()
 				alert(suma);
 			}
 		}
-	}
+	}*/
  /*
 	//Declaro variables
 	var productos;
@@ -73,7 +73,7 @@ function mostrar()
 	*/
 
 	//Ejercicio 4js - pagina 5 esta el enunciado
-	var numeroIngresado1;
+	/*var numeroIngresado1;
 	var numeroIngresado2;
 	var numeroIngresado3;
 	var numeroIngresado4;
@@ -102,8 +102,39 @@ function mostrar()
 		}
 	}
 
-	alert(numeroMayor);
+	alert(numeroMayor);*/
 
 	//Siempre hacer una sola vez la cuenta
 
+
+	var primerNumeroIngresado;
+	var segundoNumeroIngresado;
+	var resultado;
+	var concatenoNumeros;
+	var suma;
+
+	primerNumeroIngresado = prompt("Ingrese un Número: ");
+	segundoNumeroIngresado = prompt("Ingrese otro Número: ");
+
+	concatenoNumeros = primerNumeroIngresado + segundoNumeroIngresado;
+
+	primerNumeroIngresado = parseInt(primerNumeroIngresado);
+	segundoNumeroIngresado = parseInt(segundoNumeroIngresado);
+
+	if(primerNumeroIngresado == segundoNumeroIngresado){
+		resultado = concatenoNumeros;
+	}else{
+		if(primerNumeroIngresado > segundoNumeroIngresado){
+			resultado = primerNumeroIngresado - segundoNumeroIngresado
+		}else{
+			resultado = primerNumeroIngresado + segundoNumeroIngresado;
+		}
+	}
+
+	alert(resultado);
+
+	if(primerNumeroIngresado + segundoNumeroIngresado > 10){
+			resultado = primerNumeroIngresado + segundoNumeroIngresado;
+			alert("La suma es: " + resultado + " y supera el 10");
+	}
 }

@@ -1,7 +1,7 @@
 function mostrar()
 {
 	//Declaro variables
-	var tipoPago;
+	/*var tipoPago;
 	var paquete;
 	var precioFinal;
 	var precio = 10000;
@@ -41,6 +41,6 @@ function mostrar()
 			break;
 	}
 
-	alert("Usted debe pagar: " + precioFinal);
+	alert("Usted debe pagar: " + precioFinal);*/
 
 }

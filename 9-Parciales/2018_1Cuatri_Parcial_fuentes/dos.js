@@ -1,12 +1,12 @@
 function mostrar()
 {
-	var nombre;
+	/*var nombre;
 	var localidad;
 
 	nombre = elNombre.value;
 	localidad = laLocalidad.value;
 
-	alert("Usted es " + nombre + " y vive en la localidad de " + localidad); 
+	alert("Usted es " + nombre + " y vive en la localidad de " + localidad);*/ 
 
 	//Ejercicio 2 en clase
 	/*
@@ -26,5 +26,16 @@ function mostrar()
 		  "Con tarjeta ha y un recargo del 10% que es: $" + porcentaje + "\n" +
 		  "El precio final del producto es: $" + precioFinal);
 	*/
+
+	//Declaro variables
+	var nombreIngresado;
+	var localidadIngresada;
+
+	//Inicializo variables
+	nombreIngresado = elNombre.value;
+	localidadIngresada = laLocalidad.value;
+
+	//Muestro resultados
+	alert("Usted es: " + nombreIngresado + " y vive en la localidad de: " + localidadIngresada);
 
 }
