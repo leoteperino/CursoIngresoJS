@@ -14,7 +14,7 @@ function mostrar()
 	respuesta = "si";
 	acumuladoresPositivos = 0;
 	acumuladoresNegativos = 0;
-	contadorNegativos = 1;
+	contadorNegativos = 0;
 	contadorPositivo = 0;
 	contadorCero = 0;
 	contador = 0;
@@ -44,15 +44,13 @@ function mostrar()
 		respuesta = prompt("Coloque SI para seguir ingresando números");
 	}
 
-
 	//Muestro resultados
 	alert("1 - La suma de los negativos es: " + acumuladoresNegativos + "\n" +
           "2 - La suma de los positivos es: " + acumuladoresPositivos + "\n" +
           "3 - La cantidad de Negativos es: " + contadorNegativos + "\n" +
           "4 - La cantidad de 0 es: " + contadorCero + "\n" +
           "5 - La cantidad de numeros pares es: " + contadorPares + "\n" +
-          "6 - El promedio de los positivos es: " + acumuladoresPositivos/contadorPositivo + "\n" 
-          /*"7 - El promedio de los negativos es: " + acumuladoresNegativos/contadorNegativos + "\n" +
-          "8 - Diferencia entre positivos y negativos: " + acumuladoresPositivos-acumuladoresNegativos + "\n"*/);
-
+          "6 - El promedio de los positivos es: " + (acumuladoresPositivos/contadorPositivo) + "\n" +
+          "7 - El promedio de los negativos es: " + (acumuladoresPositivos/contadorNegativos) + "\n" +
+          "8 - Diferencia entre positivos y negativos es: " + (contadorPositivo - contadorNegativos)); 
 }

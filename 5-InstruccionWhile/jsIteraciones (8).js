@@ -1,6 +1,6 @@
 function mostrar()
 {
-	var numerosIngresados;
+	/*var numerosIngresados;
 	var acumuladorPositivos;
 	var acumuladorNegativos;
 	var respuesta;
@@ -21,6 +21,11 @@ function mostrar()
 	}
 
     suma.value = acumuladorPositivos;
-    producto.value = acumuladorNegativos;
+    producto.value = acumuladorNegativos;*/
+
+    var a = 2;
+    var b = 0;
+    var d = a-b;
+    alert("El dato es: " + d);
 
 }//FIN DE LA FUNCIÓN
