@@ -6,47 +6,45 @@ function mostrar()
 	var acumuladorNotas;
 	var promedio;
 	var acumuladorNotasBajas;
-	var acumuladorNotasAltas;
 	var sexo;
+	var acumuladorVarones;
 
 	contador = 0;
 	acumuladorNotas = 0;
-	acumuladorNotasBajas = 11;
-	acumuladorNotasAltas = 0;
-
+	acumuladorNotasBajas = 0;
+	acumuladorVarones = 0;
 
 	while(contador < 5){
-		contador ++;
-		notasIngresadas = prompt("Ingrese su nota: ");
+		contador++;
+		notasIngresadas = prompt("Ingrese Notas: ");
 		notasIngresadas = parseInt(notasIngresadas);
-
 		while(notasIngresadas > 10){
-			notasIngresadas = prompt("Ingrese solo notas del 0 al 10: ");
+			notasIngresadas = prompt("Ingreso una nota no valida. Ingrese notas del 0 al 10");
 			notasIngresadas = parseInt(notasIngresadas);
 		}
-
-		sexoIngresado = prompt("Ingresar su sexo: ");
+		sexoIngresado = prompt("Ingrese el sexo: ");
 		while(sexoIngresado != "f" && sexoIngresado != "m"){
-			sexoIngresado = prompt("Ingreso un sexo no valido, Ingrese m o f: ");
+			sexoIngresado = prompt("Sexo no valido; Ingrese m o f: ");
 		}
-
-		if(notasIngresadas>0){
-			acumuladorNotas = acumuladorNotas + notasIngresadas;
-			promedio = acumuladorNotas / contador;
-			if(acumuladorNotasBajas > notasIngresadas){
-				acumuladorNotasBajas = notasIngresadas;
-				sexo = sexoIngresado;
-			} 
-		}
-
-		if(sexoIngresado == "m"){
-			if(acumuladorNotasAltas < notasIngresadas){
-				acumuladorNotasAltas = notasIngresadas;
+		acumuladorNotas = notasIngresadas + acumuladorNotas;
+		promedio = acumuladorNotas/contador;
+		console.log(sexoIngresado);
+		if(contador == 1){
+			acumuladorNotasBajas = notasIngresadas;
+			sexo = sexoIngresado;
+		}else{
+			if(notasIngresadas < acumuladorNotasBajas){
+				acumuladorNotasBajas = notasIngresadas;	
 				sexo = sexoIngresado;
 			}
 		}
+		if(sexoIngresado == "m" && notasIngresadas >= 6){
+			acumuladorVarones = notaIngresada;
+		}
 	}
 
-	alert(acumuladorNotasAltas + " " + sexo);
+	alert(acumuladorVarones);		
 }
+
+
 
