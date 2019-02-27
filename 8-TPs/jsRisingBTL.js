@@ -9,5 +9,60 @@ F.	Nacionalidad, “A” para argentinos, “E” para extranjeros, “N” para
  */
 function ComenzarIngreso () 
 {
+	 var edadIngresada;
+	 var sexoIngresado;
+	 var estadoCivilIngresado;
+	 var sueldoBrutoIngresado;
+	 var numeroLegajoIngresado;
+	 var nacionalidadIngresada;
+
+	 edadIngresada = prompt("Ingrese la edad: ");
+	 edadIngresada = parseInt(edadIngresada);
+
+	while(isNaN(edadIngresada) || edadIngresada < 18 || edadIngresada > 90){
+	 	 edadIngresada = prompt("Error, Ingrese la edad");
+	 }
+
+	 sexoIngresado = prompt("Ingrese sexo: ");
+
+	 while(sexoIngresado != "f" && sexoIngresado != "m"){
+	 		sexoIngresado = prompt("Error, Ingresa de nuevo: ");
+	 } 
+
+	 estadoCivilIngresado = prompt("Ingrese estado civil: ");
+	 estadoCivilIngresado = parseInt(estadoCivilIngresado);
+
+	 while(isNaN(estadoCivilIngresado) || estadoCivilIngresado <= 0 || estadoCivilIngresado > 4){
+	 	estadoCivilIngresado = prompt("Error, Ingrese de nuevo");
+	 } 
+
+	 sueldoBrutoIngresado = prompt("Ingrese sueldo: ");
+	 sueldoBrutoIngresado = parseInt(sueldoBrutoIngresado);
+
+	 while(isNaN(sueldoBrutoIngresado) || sueldoBrutoIngresado < 8000 ){
+	 	sueldoBrutoIngresado = prompt("Error, Ingrese de nuevo: ");
+	 }
+
+	 numeroLegajoIngresado = prompt("Ingrese el numero de Legajo");
+	 numeroLegajoIngresado = parseInt(numeroLegajoIngresado);
+
+	 while(isNaN(numeroLegajoIngresado) || numeroLegajoIngresado < 1000 || numeroLegajoIngresado < 0){
+	 	numeroLegajoIngresado = prompt("Error, Ingrese de nuevo: ");
+	 }
+
+	 nacionalidadIngresada = prompt("Ingrese la nacionalidad: ");
+
+	 while(nacionalidadIngresada != "a" && nacionalidadIngresada != "e" && nacionalidadIngresada != "n"){
+	 	nacionalidadIngresada = prompt("Error, Ingrese de nuevo: "); 
+	 }
+
+	 Edad.value=edadIngresada;
+	 Sexo.value=sexoIngresado;
+	 EstadoCivil.value=estadoCivilIngresado;
+	 Sueldo.value=sueldoBrutoIngresado;
+	 Legajo.value=numeroLegajoIngresado;
+	 Nacionalidad.value=nacionalidadIngresada;
+
+
  
 }
