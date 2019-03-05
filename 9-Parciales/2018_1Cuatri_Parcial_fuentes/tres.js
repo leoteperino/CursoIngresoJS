@@ -18,7 +18,7 @@ function mostrar()
 	elPrecioFinal.value = precioFinal;*/
 
 	//Declaro variables
-	var precioIngresado;
+	/*var precioIngresado;
 	var descuentoIngresado;
 	var precioFinal;
 
@@ -34,5 +34,19 @@ function mostrar()
 	precioFinal = precioIngresado - precioIngresado * (descuentoIngresado / 100);
 
 	//Muestro el resultado
-	elPrecioFinal.value = precioFinal;
+	elPrecioFinal.value = precioFinal;*/
+
+	var precioIngresado;
+	var porcentajeIngresado;
+	var precioFinal;
+
+	precioIngresado = prompt("Ingrese un precio: ");
+	porcentajeIngresado = prompt("Ingrese un porcentaje de descuento: ");
+
+	precioIngresado = parseInt(precioIngresado);
+	porcentajeIngresado = parseInt(porcentajeIngresado);
+
+	precioFinal = precioIngresado * ( 1 - (porcentajeIngresado/100));
+
+	elPrecioFinal.value = precioFinal; 
 }

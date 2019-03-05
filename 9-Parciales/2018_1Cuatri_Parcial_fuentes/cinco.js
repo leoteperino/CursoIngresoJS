@@ -43,4 +43,32 @@ function mostrar()
 
 	alert("Usted debe pagar: " + precioFinal);*/
 
+	var planetaIngresado;
+	var resultado;
+
+	planetaIngresado = prompt("Ingrese un planeta: ");
+	resultado = "";
+
+	switch(planetaIngresado){
+		case "tierra":
+			resultado = "Aqui vivimos";
+			break;
+		case "mercurio":
+		case "venus":
+			resultado = "Aca hace mas calor";
+			break;
+		case "marte":
+		case "jupiter":
+		case "urano":
+		case "neptuno":
+		case "saturno":
+			resultado = "Aca hace más frio";
+			break;
+		default:
+			resultado = "ERROR. Este no es un planeta. DATO NO VALIDO";
+			break;
+	}
+
+	alert(resultado);
+
 }

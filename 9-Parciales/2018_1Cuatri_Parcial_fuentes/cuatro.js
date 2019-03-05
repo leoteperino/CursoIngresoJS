@@ -107,7 +107,7 @@ function mostrar()
 	//Siempre hacer una sola vez la cuenta
 
 
-	var primerNumeroIngresado;
+/*	var primerNumeroIngresado;
 	var segundoNumeroIngresado;
 	var resultado;
 	var concatenoNumeros;
@@ -136,5 +136,32 @@ function mostrar()
 	if(primerNumeroIngresado + segundoNumeroIngresado > 10){
 			resultado = primerNumeroIngresado + segundoNumeroIngresado;
 			alert("La suma es: " + resultado + " y supera el 10");
+	}*/
+
+	var numeroIngresado1;
+	var numeroIngresado2;
+	var resultado;
+
+	numeroIngresado1 = prompt("Ingrese un numero: ");
+	numeroIngresado2 = prompt("Ingrese otro numero: ");
+	resultado = "";
+
+	if(numeroIngresado1 == numeroIngresado2){
+		resultado = numeroIngresado1 + numeroIngresado2;
 	}
+
+	numeroIngresado1 = parseInt(numeroIngresado1);
+	numeroIngresado2 = parseInt(numeroIngresado2);
+
+	if(numeroIngresado1 != numeroIngresado2){
+		if(numeroIngresado1 > numeroIngresado2){
+			resultado = numeroIngresado1 - numeroIngresado2;
+		}else{
+			resultado = numeroIngresado1 + numeroIngresado2;
+			if(resultado > 10){
+				resultado = "La suma es: " + resultado + " y supero el 10";
+			}
+		}
+	}
+	alert(resultado);
 }

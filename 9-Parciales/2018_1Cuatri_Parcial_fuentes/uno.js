@@ -36,7 +36,7 @@ function mostrar()
 	alert("Ustedes son " + nombre1 + " y " + nombre2 + " y la suma de sus edades es " + sumaEdades);
 	*/
 
-	//Declaro Variables
+	/*//Declaro Variables
 	var ancho;
 	var largo;
 	var perimetro;
@@ -53,6 +53,22 @@ function mostrar()
 	perimetro = 2 * (largo + ancho);
 
 	//Muestro el resultado
-	alert("El perimetro es: " + perimetro);
+	alert("El perimetro es: " + perimetro);*/
+
+	var anchoIngresado;
+	var largoIngresado;
+	var perimetro;
+
+	anchoIngresado = prompt("Ingrese el ancho: ");
+	largoIngresado = prompt("Ingrese el largo: ");
+
+	anchoIngresado = parseInt(anchoIngresado);
+	largoIngresado = parseInt(largoIngresado);
+
+	perimetro = 2.(anchoIngresado + largoIngresado);
+
+	alert(perimetro);
+
+
 
 }

@@ -27,7 +27,7 @@ function mostrar()
 		  "El precio final del producto es: $" + precioFinal);
 	*/
 
-	//Declaro variables
+	/*//Declaro variables
 	var nombreIngresado;
 	var localidadIngresada;
 
@@ -36,6 +36,13 @@ function mostrar()
 	localidadIngresada = laLocalidad.value;
 
 	//Muestro resultados
-	alert("Usted es: " + nombreIngresado + " y vive en la localidad de: " + localidadIngresada);
+	alert("Usted es: " + nombreIngresado + " y vive en la localidad de: " + localidadIngresada);*/
 
+	var nombreIngresado;
+	var localidadIngresada;
+
+	nombreIngresado = elNombre.value;
+	localidadIngresada = laLocalidad.value;
+
+	alert("Usted es " + nombreIngresado + " y vive en la localidad de " + localidadIngresada);
 }
