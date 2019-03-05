@@ -1,6 +1,6 @@
 function mostrar()
 {
-	//Declaro variables
+	/*//Declaro variables
 	var primerNumeroIngresado;
 	var segundoNumeroIngresado;
 	var concatenoNumeros;
@@ -31,5 +31,32 @@ function mostrar()
 				alert(suma);
 			}
 		}
+	}*/
+
+	var primerNumeroIngresado;
+	var segunfoNumeroIngresado;
+	var mensaje;
+
+	mensaje = "";
+
+	primerNumeroIngresado = prompt("Ingrese un numero: ");
+	segundoNumeroIngresado = prompt("Ingrese otro numero: ");
+
+	if(primerNumeroIngresado == segundoNumeroIngresado){
+		mensaje = primerNumeroIngresado + segundoNumeroIngresado;
+	}else{
+		primerNumeroIngresado = parseInt(primerNumeroIngresado);
+		segundoNumeroIngresado = parseInt(segundoNumeroIngresado);
+		if(primerNumeroIngresado > segundoNumeroIngresado){
+			mensaje = primerNumeroIngresado / segundoNumeroIngresado;
+		}else{
+			mensaje = primerNumeroIngresado + segundoNumeroIngresado;
+			if(primerNumeroIngresado + segundoNumeroIngresado < 50){
+				mensaje = "La suma es: " + primerNumeroIngresado + segundoNumeroIngresado + " y es menor a 50";
+			}
+		}
 	}
+
+	alert(mensaje);
+
 }

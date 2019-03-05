@@ -1,6 +1,6 @@
 function mostrar()
 {
-	//Declaro Variables
+	/*//Declaro Variables
 	var letraIngresada;
 	var numeroIngresado;
 	var respuesta;
@@ -89,5 +89,43 @@ function mostrar()
 	document.write("El promedio de números positivos es: " + promedioPositivos + "<br/>");
 	document.write("La suma de todos los números negativos es: " + acumuladorNegativos + "<br/>");
 	document.write("La Número Maximo y la letras es: " + acumuladorMaximo + acumuladorLetraMaximo + "<br/>");
-	document.write("La Número Minimo y su letra es: " + acumuladorMinimo + acumuladorLetraMinimo + "<br/>");
+	document.write("La Número Minimo y su letra es: " + acumuladorMinimo + acumuladorLetraMinimo + "<br/>");*/
+
+	var nombre;
+	var cantidadPaginas;
+	var cantidadDeVentas;
+	var tema;
+	var respuesta;
+
+	respuesta = "si";
+
+	while(respuesta == "si"){
+
+		nombre = prompt("Ingrese el nombre de un libro: ");
+		while(isNaN(nombre) == false){
+			nombre = prompt("ERROR. Ingrese un nombre: ");
+		}
+
+		cantidadPaginas = prompt("Ingrese la cantidadPaginas: ");
+		cantidadPaginas = parseInt(cantidadPaginas);
+		while(isNaN(cantidadPaginas)){
+			cantidadPaginas = prompt("ERROR. Ingrese la cantidadPaginas: ");
+		}
+
+		cantidadDeVentas = prompt("Ingrese la cantidadDeVentas: ");
+		cantidadDeVentas = parseInt(cantidadDeVentas);
+		while(isNaN(cantidadDeVentas)){
+			cantidadDeVentas = prompt("ERROR. Ingrese la cantidadDeVentas: ");
+		}
+
+		tema = prompt("Ingrese el tema del libro: ");
+		while(isNaN(tema) == false){
+			tema = prompt("ERROR. Ingrese un tema: ");
+		}
+
+		respuesta = prompt("Desea seguir ingresando datos? SI o NO");
+		while(respuesta != "si" && respuesta != "no"){
+			respuesta = prompt("ERROR. Desea seguir ingresando datos? SI o NO");
+		}
+	}
 }

@@ -1,6 +1,6 @@
 function mostrar()
 {
-	var precioIngresado;
+	/*var precioIngresado;
 	var porcentajeIngresado;
 	var calculoDescuentoEnDinero;
 	var descuentoEnDinero;
@@ -35,5 +35,29 @@ function mostrar()
 
 	precioFinal = calcularIva;
 
+	elPrecioFinal.value = precioFinal;*/
+
+	var precioIngresado;
+	var porcentaDescuentoIngresado;
+	var descuento;
+	var precioConDescuento;
+	var precioFinal;
+	var iva;
+
+	precioIngresado = prompt("Ingrese un precio: ");
+	porcentaDescuentoIngresado = prompt("Ingrese un porcentaje de descuento");
+
+	precioIngresado = parseInt(precioIngresado);
+	porcentaDescuentoIngresado = parseInt(porcentaDescuentoIngresado);
+
+	descuento = precioIngresado * porcentaDescuentoIngresado / 100;
+	precioConDescuento = precioIngresado - descuento;
+
+	iva = 0.21;
+
+	precioFinal = precioConDescuento * 1.21;
+
 	elPrecioFinal.value = precioFinal;
+
+	alert("El precio con Descuento es: " + precioConDescuento + " y el descuento es de: " + descuento);
 }
