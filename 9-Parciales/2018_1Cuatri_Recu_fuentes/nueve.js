@@ -83,4 +83,20 @@ function mostrar()
 	document.write("El peso maximo de todos los animales cuya temperatura es bajo Cero, es: " + animalMasPesadoTemperaturaBajoCero + "<br/>");
 	document.write("El peso minimo de todos los animales cuya temperatura es bajo Cero, es: " + animalMenosPesadoTemperaturaBajoCero + "<br/>");*/
 
+	var numeros;
+	var contador;
+	var acumulador;
+
+	for(i=0;i<5;i++){
+		numeros=prompt("Ingrese numeros: ");
+		numeros = parseInt(numeros);
+		while(numeros > 0){
+			acumulador = numeros;
+			if(acumulador<numeros){
+				acumulador = numeros;
+			}
+		}
+	}
+
+	alert(acumulador);
 }
