@@ -1,12 +1,10 @@
 function mostrar()
 {
-
 	var horaIngresada;
 	var respuesta;
 
 	horaIngresada = laHora.value;
 	horaIngresada = parseInt(horaIngresada); 
-	respuesta = "";
 
 	switch(horaIngresada){
 		case 6:
@@ -35,6 +33,5 @@ function mostrar()
 			}
 			break;
 	}
-
 	alert(resultado);
 }

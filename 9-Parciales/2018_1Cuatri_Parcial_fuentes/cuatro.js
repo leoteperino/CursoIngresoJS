@@ -141,19 +141,13 @@ function mostrar()
 	var numeroIngresado1;
 	var numeroIngresado2;
 	var resultado;
-
 	numeroIngresado1 = prompt("Ingrese un numero: ");
 	numeroIngresado2 = prompt("Ingrese otro numero: ");
-	resultado = "";
-
 	if(numeroIngresado1 == numeroIngresado2){
 		resultado = numeroIngresado1 + numeroIngresado2;
-	}
-
-	numeroIngresado1 = parseInt(numeroIngresado1);
-	numeroIngresado2 = parseInt(numeroIngresado2);
-
-	if(numeroIngresado1 != numeroIngresado2){
+	}else{
+		numeroIngresado1 = parseInt(numeroIngresado1);
+		numeroIngresado2 = parseInt(numeroIngresado2);
 		if(numeroIngresado1 > numeroIngresado2){
 			resultado = numeroIngresado1 - numeroIngresado2;
 		}else{

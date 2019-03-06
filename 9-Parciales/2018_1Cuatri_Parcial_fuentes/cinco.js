@@ -47,8 +47,7 @@ function mostrar()
 	var resultado;
 
 	planetaIngresado = prompt("Ingrese un planeta: ");
-	resultado = "";
-
+	
 	switch(planetaIngresado){
 		case "tierra":
 			resultado = "Aqui vivimos";
@@ -68,7 +67,5 @@ function mostrar()
 			resultado = "ERROR. Este no es un planeta. DATO NO VALIDO";
 			break;
 	}
-
 	alert(resultado);
-
 }
